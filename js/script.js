@@ -93,7 +93,7 @@ const clearCartBtn = document.querySelector(".clearCart");
 
 // Flusso generale
 const parsedTotCardItemsLen = 0;
- // JSON.parse(localStorage.getItem("totCartitems"))?.length || 0;
+ JSON.parse(localStorage.getItem("totCartitems"))?.length || 0;
 
 cartProductsNum.textContent = `Numero prodotti: ${parsedTotCardItemsLen || 0}`;
 getProductsList();
